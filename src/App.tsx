@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button, {ButtonSize, ButtonType} from './component/Button/button'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -18,6 +16,11 @@ function App() {
         >
           Learn React
         </a>
+        <Button disabled>Hello</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
+        <Button btnType={ButtonType.Link} href={"https://www.baidu.com"}>BaiDu</Button>
+        <Button>Hello</Button>
+
       </header>
     </div>
   );
