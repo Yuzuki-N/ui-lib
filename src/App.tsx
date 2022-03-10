@@ -16,10 +16,10 @@ function App() {
         >
           Learn React
         </a>
-        <Button disabled>Hello</Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
-        <Button btnType={ButtonType.Link} href={"https://www.baidu.com"}>BaiDu</Button>
         <Button>Hello</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
+        <Button btnType={ButtonType.Link} disabled href={"https://www.baidu.com"}>BaiDu</Button>
+        <Button size={ButtonSize.Small} btnType={ButtonType.Danger}>Hello</Button>
 
       </header>
     </div>
